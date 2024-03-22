@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.bsl.mapper.BslZjdUseInfoMapper" >
+  <resultMap id="BaseResultMap" type="com.bsl.pojo.BslZjdUseInfo" >
+    <id column="prod_id" property="prodId" jdbcType="VARCHAR" />
+    <id column="prod_zjd_id" property="prodZjdId" jdbcType="VARCHAR" />
+    <result column="prod_use_weight" property="prodUseWeight" jdbcType="REAL" />
+    <result column="prod_use_bl" property="prodUseBl" jdbcType="REAL" />
+    <result column="prod_plan_id" property="prodPlanId" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    prod_id, prod_zjd_id, prod_use_weight, prod_use_bl, prod_plan_id
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.bsl.pojo.BslZjdUseInfoExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from bsl_zjd_use_info
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="com.bsl.pojo.BslZjdUseInfoKey" >
+    select 
+    <include refid="Base_Column_List" />
+    from bsl_zjd_use_info
+    where prod_id = #{prodId,jdbcType=VARCHAR}
+      and prod_zjd_id = #{prodZjdId,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="com.bsl.pojo.BslZjdUseInfoKey" >
+    delete from bsl_zjd_use_info
+    where prod_id = #{prodId,jdbcType=VARCHAR}
+      and prod_zjd_id = #{prodZjdId,jdbcType=VARCHAR}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.bsl.pojo.BslZjdUseInfoExample" >
+    delete from bsl_zjd_use_info
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.bsl.pojo.BslZjdUseInfo" >
+    insert into bsl_zjd_use_info (prod_id, prod_zjd_id, prod_use_weight, 
+      prod_use_bl, prod_plan_id)
+    values (#{prodId,jdbcType=VARCHAR}, #{prodZjdId,jdbcType=VARCHAR}, #{prodUseWeight,jdbcType=REAL}, 
+      #{prodUseBl,jdbcType=REAL}, #{prodPlanId,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.bsl.pojo.BslZjdUseInfo" >
+    insert into bsl_zjd_use_info
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="prodId != null" >
+        prod_id,
+      </if>
+      <if test="prodZjdId != null" >
+        prod_zjd_id,
+      </if>
+      <if test="prodUseWeight != null" >
+        prod_use_weight,
+      </if>
+      <if test="prodUseBl != null" >
+        prod_use_bl,
+      </if>
+      <if test="prodPlanId != null" >
+        prod_plan_id,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="prodId != null" >
+        #{prodId,jdbcType=VARCHAR},
+      </if>
+      <if test="prodZjdId != null" >
+        #{prodZjdId,jdbcType=VARCHAR},
+      </if>
+      <if test="prodUseWeight != null" >
+        #{prodUseWeight,jdbcType=REAL},
+      </if>
+      <if test="prodUseBl != null" >
+        #{prodUseBl,jdbcType=REAL},
+      </if>
+      <if test="prodPlanId != null" >
+        #{prodPlanId,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.bsl.pojo.BslZjdUseInfoExample" resultType="java.lang.Integer" >
+    select count(*) from bsl_zjd_use_info
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update bsl_zjd_use_info
+    <set >
+      <if test="record.prodId != null" >
+        prod_id = #{record.prodId,jdbcType=VARCHAR},
+      </if>
+      <if test="record.prodZjdId != null" >
+        prod_zjd_id = #{record.prodZjdId,jdbcType=VARCHAR},
+      </if>
+      <if test="record.prodUseWeight != null" >
+        prod_use_weight = #{record.prodUseWeight,jdbcType=REAL},
+      </if>
+      <if test="record.prodUseBl != null" >
+        prod_use_bl = #{record.prodUseBl,jdbcType=REAL},
+      </if>
+      <if test="record.prodPlanId != null" >
+        prod_plan_id = #{record.prodPlanId,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update bsl_zjd_use_info
+    set prod_id = #{record.prodId,jdbcType=VARCHAR},
+      prod_zjd_id = #{record.prodZjdId,jdbcType=VARCHAR},
+      prod_use_weight = #{record.prodUseWeight,jdbcType=REAL},
+      prod_use_bl = #{record.prodUseBl,jdbcType=REAL},
+      prod_plan_id = #{record.prodPlanId,jdbcType=VARCHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.bsl.pojo.BslZjdUseInfo" >
+    update bsl_zjd_use_info
+    <set >
+      <if test="prodUseWeight != null" >
+        prod_use_weight = #{prodUseWeight,jdbcType=REAL},
+      </if>
+      <if test="prodUseBl != null" >
+        prod_use_bl = #{prodUseBl,jdbcType=REAL},
+      </if>
+      <if test="prodPlanId != null" >
+        prod_plan_id = #{prodPlanId,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where prod_id = #{prodId,jdbcType=VARCHAR}
+      and prod_zjd_id = #{prodZjdId,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.bsl.pojo.BslZjdUseInfo" >
+    update bsl_zjd_use_info
+    set prod_use_weight = #{prodUseWeight,jdbcType=REAL},
+      prod_use_bl = #{prodUseBl,jdbcType=REAL},
+      prod_plan_id = #{prodPlanId,jdbcType=VARCHAR}
+    where prod_id = #{prodId,jdbcType=VARCHAR}
+      and prod_zjd_id = #{prodZjdId,jdbcType=VARCHAR}
+  </update>
+  
+  <resultMap id="BaseResultMapMW" type="com.bsl.reportbean.BslRuInFo" >
+    <result column="prod_use_weight" property="prodRuWeight" jdbcType="REAL" />
+  </resultMap>
+  <select id="getMakeWeightByZjdId" resultMap="BaseResultMapMW" parameterType="java.lang.String">
+  		select ifnull(sum(prod_use_weight),0) prod_use_weight from bsl_zjd_use_info 
+  		where prod_zjd_id = #{prodZjdId,jdbcType=VARCHAR}
+  </select>
+  
+</mapper>

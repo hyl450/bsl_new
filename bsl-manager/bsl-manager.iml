@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="J2EE_WEB_MODULE" version="4">
+  <component name="AdditionalModuleElements">
+    <content url="file://$MODULE_DIR$" dumb="true">
+      <sourceFolder url="file://$MODULE_DIR$/src/main/webapp" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test" isTestSource="true" />
+    </content>
+  </component>
+  <component name="EclipseModuleManager">
+    <conelement value="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER" />
+    <src_description expected_position="0">
+      <src_folder value="file://$MODULE_DIR$/src/main/java" expected_position="0" />
+      <src_folder value="file://$MODULE_DIR$/src/main/resources" expected_position="1" />
+      <src_folder value="file://$MODULE_DIR$/src/test/java" expected_position="2" />
+      <src_folder value="file://$MODULE_DIR$/src/test/resources" expected_position="3" />
+    </src_description>
+  </component>
+  <component name="WebModuleBuildComponent">
+    <setting name="EXPLODED_URL" value="file://$MODULE_DIR$/target/bsl-manager" />
+  </component>
+  <component name="WebModuleProperties">
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1" />
+      <attribute name="URI" value="/WEB-INF/lib/poi-3.8.jar" />
+      <url>jar://$MODULE_DIR$/../../../softs/apache-maven-3.6.3/repository/org/apache/poi/poi/3.8/poi-3.8.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1" />
+      <attribute name="URI" value="/WEB-INF/lib/commons-codec-1.5.jar" />
+      <url>jar://$MODULE_DIR$/../../../softs/apache-maven-3.6.3/repository/commons-codec/commons-codec/1.5/commons-codec-1.5.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1" />
+      <attribute name="URI" value="/WEB-INF/lib/mybatis-3.2.8.jar" />
+      <url>jar://$MODULE_DIR$/../../../softs/apache-maven-3.6.3/repository/org/mybatis/mybatis/3.2.8/mybatis-3.2.8.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1" />
+      <attribute name="URI" value="/WEB-INF/lib/mybatis-paginator-1.2.15.jar" />
+      <url>jar://$MODULE_DIR$/../../../softs/apache-maven-3.6.3/repository/com/github/miemiedev/mybatis-paginator/1.2.15/mybatis-paginator-1.2.15.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1" />
+      <attribute name="URI" value="/WEB-INF/lib/slf4j-api-1.7.2.jar" />
+      <url>jar://$MODULE_DIR$/../../../softs/apache-maven-3.6.3/repository/org/slf4j/slf4j-api/1.7.2/slf4j-api-1.7.2.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1" />
+      <attribute name="URI" value="/WEB-INF/lib/pagehelper-3.4.2-fix.jar" />
+      <url>jar://$MODULE_DIR$/../../../softs/apache-maven-3.6.3/repository/com/github/pagehelper/pagehelper/3.4.2-fix/pagehelper-3.4.2-fix.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="0" />
+      <attribute name="URI" value="/WEB-INF/lib/jsp-api-2.0.jar" />
+      <url>jar://$MODULE_DIR$/../../../softs/apache-maven-3.6.3/repository/javax/servlet/jsp-api/2.0/jsp-api-2.0.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="0" />
+      <attribute name="URI" value="/WEB-INF/lib/servlet-api-2.5.jar" />
+      <url>jar://$MODULE_DIR$/../../../softs/apache-maven-3.6.3/repository/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1" />
+      <attribute name="URI" value="/WEB-INF/lib/druid-1.0.9.jar" />
+      <url>jar://$MODULE_DIR$/../../../softs/apache-maven-3.6.3/repository/com/alibaba/druid/1.0.9/druid-1.0.9.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="0" />
+      <attribute name="URI" value="/WEB-INF/lib/jconsole.jar" />
+      <url>jar://C:/Program Files/Java/jdk1.8.0_91/jre/../lib/jconsole.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="0" />
+      <attribute name="URI" value="/WEB-INF/lib/tools.jar" />
+      <url>jar://C:/Program Files/Java/jdk1.8.0_91/jre/../lib/tools.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1" />
+      <attribute name="URI" value="/WEB-INF/lib/jedis-2.9.0.jar" />
+      <url>jar://$MODULE_DIR$/../../../softs/apache-maven-3.6.3/repository/redis/clients/jedis/2.9.0/jedis-2.9.0.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1" />
+      <attribute name="URI" value="/WEB-INF/lib/commons-pool2-2.4.2.jar" />
+      <url>jar://$MODULE_DIR$/../../../softs/apache-maven-3.6.3/repository/org/apache/commons/commons-pool2/2.4.2/commons-pool2-2.4.2.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1" />
+      <attribute name="URI" value="/WEB-INF/lib/spring-aspects-4.1.3.RELEASE.jar" />
+      <url>jar://$MODULE_DIR$/../../../softs/apache-maven-3.6.3/repository/org/springframework/spring-aspects/4.1.3.RELEASE/spring-aspects-4.1.3.RELEASE.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1" />
+      <attribute name="URI" value="/WEB-INF/lib/aspectjweaver-1.8.4.jar" />
+      <url>jar://$MODULE_DIR$/../../../softs/apache-maven-3.6.3/repository/org/aspectj/aspectjweaver/1.8.4/aspectjweaver-1.8.4.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1" />
+      <attribute name="URI" value="/WEB-INF/lib/rxtxcomm-2.2pre2.jar" />
+      <url>jar://$MODULE_DIR$/../../../softs/apache-maven-3.6.3/repository/org/rxtx/rxtxcomm/2.2pre2/rxtxcomm-2.2pre2.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1" />
+      <attribute name="URI" value="/WEB-INF/lib/mysql-connector-java-8.0.11.jar" />
+      <url>jar://$MODULE_DIR$/../../../softs/apache-maven-3.6.3/repository/mysql/mysql-connector-java/8.0.11/mysql-connector-java-8.0.11.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1" />
+      <attribute name="URI" value="/WEB-INF/lib/protobuf-java-2.6.0.jar" />
+      <url>jar://$MODULE_DIR$/../../../softs/apache-maven-3.6.3/repository/com/google/protobuf/protobuf-java/2.6.0/protobuf-java-2.6.0.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1" />
+      <attribute name="URI" value="/WEB-INF/lib/jstl-1.2.jar" />
+      <url>jar://$MODULE_DIR$/../../../softs/apache-maven-3.6.3/repository/jstl/jstl/1.2/jstl-1.2.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1" />
+      <attribute name="URI" value="/WEB-INF/lib/spring-beans-4.1.3.RELEASE.jar" />
+      <url>jar://$MODULE_DIR$/../../../softs/apache-maven-3.6.3/repository/org/springframework/spring-beans/4.1.3.RELEASE/spring-beans-4.1.3.RELEASE.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1" />
+      <attribute name="URI" value="/WEB-INF/lib/spring-core-4.1.3.RELEASE.jar" />
+      <url>jar://$MODULE_DIR$/../../../softs/apache-maven-3.6.3/repository/org/springframework/spring-core/4.1.3.RELEASE/spring-core-4.1.3.RELEASE.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1" />
+      <attribute name="URI" value="/WEB-INF/lib/commons-logging-1.2.jar" />
+      <url>jar://$MODULE_DIR$/../../../softs/apache-maven-3.6.3/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1" />
+      <attribute name="URI" value="/WEB-INF/lib/commons-fileupload-1.3.1.jar" />
+      <url>jar://$MODULE_DIR$/../../../softs/apache-maven-3.6.3/repository/commons-fileupload/commons-fileupload/1.3.1/commons-fileupload-1.3.1.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1" />
+      <attribute name="URI" value="/WEB-INF/lib/commons-io-2.2.jar" />
+      <url>jar://$MODULE_DIR$/../../../softs/apache-maven-3.6.3/repository/commons-io/commons-io/2.2/commons-io-2.2.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1" />
+      <attribute name="URI" value="/WEB-INF/lib/spring-webmvc-4.1.3.RELEASE.jar" />
+      <url>jar://$MODULE_DIR$/../../../softs/apache-maven-3.6.3/repository/org/springframework/spring-webmvc/4.1.3.RELEASE/spring-webmvc-4.1.3.RELEASE.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1" />
+      <attribute name="URI" value="/WEB-INF/lib/spring-context-4.1.3.RELEASE.jar" />
+      <url>jar://$MODULE_DIR$/../../../softs/apache-maven-3.6.3/repository/org/springframework/spring-context/4.1.3.RELEASE/spring-context-4.1.3.RELEASE.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1" />
+      <attribute name="URI" value="/WEB-INF/lib/spring-aop-4.1.3.RELEASE.jar" />
+      <url>jar://$MODULE_DIR$/../../../softs/apache-maven-3.6.3/repository/org/springframework/spring-aop/4.1.3.RELEASE/spring-aop-4.1.3.RELEASE.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1" />
+      <attribute name="URI" value="/WEB-INF/lib/aopalliance-1.0.jar" />
+      <url>jar://$MODULE_DIR$/../../../softs/apache-maven-3.6.3/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1" />
+      <attribute name="URI" value="/WEB-INF/lib/spring-expression-4.1.3.RELEASE.jar" />
+      <url>jar://$MODULE_DIR$/../../../softs/apache-maven-3.6.3/repository/org/springframework/spring-expression/4.1.3.RELEASE/spring-expression-4.1.3.RELEASE.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1" />
+      <attribute name="URI" value="/WEB-INF/lib/spring-web-4.1.3.RELEASE.jar" />
+      <url>jar://$MODULE_DIR$/../../../softs/apache-maven-3.6.3/repository/org/springframework/spring-web/4.1.3.RELEASE/spring-web-4.1.3.RELEASE.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1" />
+      <attribute name="URI" value="/WEB-INF/lib/poi-ooxml-3.17.jar" />
+      <url>jar://$MODULE_DIR$/../../../softs/apache-maven-3.6.3/repository/org/apache/poi/poi-ooxml/3.17/poi-ooxml-3.17.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1" />
+      <attribute name="URI" value="/WEB-INF/lib/poi-ooxml-schemas-3.17.jar" />
+      <url>jar://$MODULE_DIR$/../../../softs/apache-maven-3.6.3/repository/org/apache/poi/poi-ooxml-schemas/3.17/poi-ooxml-schemas-3.17.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1" />
+      <attribute name="URI" value="/WEB-INF/lib/xmlbeans-2.6.0.jar" />
+      <url>jar://$MODULE_DIR$/../../../softs/apache-maven-3.6.3/repository/org/apache/xmlbeans/xmlbeans/2.6.0/xmlbeans-2.6.0.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1" />
+      <attribute name="URI" value="/WEB-INF/lib/stax-api-1.0.1.jar" />
+      <url>jar://$MODULE_DIR$/../../../softs/apache-maven-3.6.3/repository/stax/stax-api/1.0.1/stax-api-1.0.1.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1" />
+      <attribute name="URI" value="/WEB-INF/lib/curvesapi-1.04.jar" />
+      <url>jar://$MODULE_DIR$/../../../softs/apache-maven-3.6.3/repository/com/github/virtuald/curvesapi/1.04/curvesapi-1.04.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1" />
+      <attribute name="URI" value="/WEB-INF/lib/spring-jdbc-4.1.3.RELEASE.jar" />
+      <url>jar://$MODULE_DIR$/../../../softs/apache-maven-3.6.3/repository/org/springframework/spring-jdbc/4.1.3.RELEASE/spring-jdbc-4.1.3.RELEASE.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1" />
+      <attribute name="URI" value="/WEB-INF/lib/spring-tx-4.1.3.RELEASE.jar" />
+      <url>jar://$MODULE_DIR$/../../../softs/apache-maven-3.6.3/repository/org/springframework/spring-tx/4.1.3.RELEASE/spring-tx-4.1.3.RELEASE.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1" />
+      <attribute name="URI" value="/WEB-INF/lib/jxl-2.6.12.jar" />
+      <url>jar://$MODULE_DIR$/../../../softs/apache-maven-3.6.3/repository/net/sourceforge/jexcelapi/jxl/2.6.12/jxl-2.6.12.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1" />
+      <attribute name="URI" value="/WEB-INF/lib/log4j-1.2.14.jar" />
+      <url>jar://$MODULE_DIR$/../../../softs/apache-maven-3.6.3/repository/log4j/log4j/1.2.14/log4j-1.2.14.jar!/</url>
+    </containerElement>
+    <containerElement type="module" name="bsl-common">
+      <attribute name="method" value="5" />
+      <attribute name="URI" value="/WEB-INF/lib/bsl-common-0.0.1-SNAPSHOT.jar" />
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1" />
+      <attribute name="URI" value="/WEB-INF/lib/joda-time-2.5.jar" />
+      <url>jar://$MODULE_DIR$/../../../softs/apache-maven-3.6.3/repository/joda-time/joda-time/2.5/joda-time-2.5.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1" />
+      <attribute name="URI" value="/WEB-INF/lib/commons-lang3-3.3.2.jar" />
+      <url>jar://$MODULE_DIR$/../../../softs/apache-maven-3.6.3/repository/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1" />
+      <attribute name="URI" value="/WEB-INF/lib/commons-net-3.3.jar" />
+      <url>jar://$MODULE_DIR$/../../../softs/apache-maven-3.6.3/repository/commons-net/commons-net/3.3/commons-net-3.3.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1" />
+      <attribute name="URI" value="/WEB-INF/lib/jackson-databind-2.4.2.jar" />
+      <url>jar://$MODULE_DIR$/../../../softs/apache-maven-3.6.3/repository/com/fasterxml/jackson/core/jackson-databind/2.4.2/jackson-databind-2.4.2.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1" />
+      <attribute name="URI" value="/WEB-INF/lib/jackson-annotations-2.4.0.jar" />
+      <url>jar://$MODULE_DIR$/../../../softs/apache-maven-3.6.3/repository/com/fasterxml/jackson/core/jackson-annotations/2.4.0/jackson-annotations-2.4.0.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1" />
+      <attribute name="URI" value="/WEB-INF/lib/jackson-core-2.4.2.jar" />
+      <url>jar://$MODULE_DIR$/../../../softs/apache-maven-3.6.3/repository/com/fasterxml/jackson/core/jackson-core/2.4.2/jackson-core-2.4.2.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1" />
+      <attribute name="URI" value="/WEB-INF/lib/httpclient-4.3.5.jar" />
+      <url>jar://$MODULE_DIR$/../../../softs/apache-maven-3.6.3/repository/org/apache/httpcomponents/httpclient/4.3.5/httpclient-4.3.5.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1" />
+      <attribute name="URI" value="/WEB-INF/lib/httpcore-4.3.2.jar" />
+      <url>jar://$MODULE_DIR$/../../../softs/apache-maven-3.6.3/repository/org/apache/httpcomponents/httpcore/4.3.2/httpcore-4.3.2.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1" />
+      <attribute name="URI" value="/WEB-INF/lib/slf4j-log4j12-1.6.4.jar" />
+      <url>jar://$MODULE_DIR$/../../../softs/apache-maven-3.6.3/repository/org/slf4j/slf4j-log4j12/1.6.4/slf4j-log4j12-1.6.4.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1" />
+      <attribute name="URI" value="/WEB-INF/lib/itextpdf-5.5.6.jar" />
+      <url>jar://$MODULE_DIR$/../../../softs/apache-maven-3.6.3/repository/com/itextpdf/itextpdf/5.5.6/itextpdf-5.5.6.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1" />
+      <attribute name="URI" value="/WEB-INF/lib/itext-asian-5.2.0.jar" />
+      <url>jar://$MODULE_DIR$/../../../softs/apache-maven-3.6.3/repository/com/itextpdf/itext-asian/5.2.0/itext-asian-5.2.0.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1" />
+      <attribute name="URI" value="/WEB-INF/lib/QRCode-3.0.jar" />
+      <url>jar://$MODULE_DIR$/../../../softs/apache-maven-3.6.3/repository/QRCode/QRCode/3.0/QRCode-3.0.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1" />
+      <attribute name="URI" value="/WEB-INF/lib/mybatis-spring-1.2.2.jar" />
+      <url>jar://$MODULE_DIR$/../../../softs/apache-maven-3.6.3/repository/org/mybatis/mybatis-spring/1.2.2/mybatis-spring-1.2.2.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1" />
+      <attribute name="URI" value="/WEB-INF/lib/guava-27.1-jre.jar" />
+      <url>jar://$MODULE_DIR$/../../../softs/apache-maven-3.6.3/repository/com/google/guava/guava/27.1-jre/guava-27.1-jre.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1" />
+      <attribute name="URI" value="/WEB-INF/lib/failureaccess-1.0.1.jar" />
+      <url>jar://$MODULE_DIR$/../../../softs/apache-maven-3.6.3/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1" />
+      <attribute name="URI" value="/WEB-INF/lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar" />
+      <url>jar://$MODULE_DIR$/../../../softs/apache-maven-3.6.3/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1" />
+      <attribute name="URI" value="/WEB-INF/lib/jsr305-3.0.2.jar" />
+      <url>jar://$MODULE_DIR$/../../../softs/apache-maven-3.6.3/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1" />
+      <attribute name="URI" value="/WEB-INF/lib/checker-qual-2.5.2.jar" />
+      <url>jar://$MODULE_DIR$/../../../softs/apache-maven-3.6.3/repository/org/checkerframework/checker-qual/2.5.2/checker-qual-2.5.2.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1" />
+      <attribute name="URI" value="/WEB-INF/lib/error_prone_annotations-2.2.0.jar" />
+      <url>jar://$MODULE_DIR$/../../../softs/apache-maven-3.6.3/repository/com/google/errorprone/error_prone_annotations/2.2.0/error_prone_annotations-2.2.0.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1" />
+      <attribute name="URI" value="/WEB-INF/lib/j2objc-annotations-1.1.jar" />
+      <url>jar://$MODULE_DIR$/../../../softs/apache-maven-3.6.3/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1" />
+      <attribute name="URI" value="/WEB-INF/lib/animal-sniffer-annotations-1.17.jar" />
+      <url>jar://$MODULE_DIR$/../../../softs/apache-maven-3.6.3/repository/org/codehaus/mojo/animal-sniffer-annotations/1.17/animal-sniffer-annotations-1.17.jar!/</url>
+    </containerElement>
+    <deploymentDescriptor version="2.3" name="web.xml" optional="false" url="file://$MODULE_DIR$/src/main/webapp/WEB-INF/web.xml" />
+    <webroots>
+      <root relative="/" url="file://$MODULE_DIR$/src/main/webapp" />
+    </webroots>
+  </component>
+</module>
