@@ -2,6 +2,7 @@ package com.bsl.service.enums.impl;
 
 import java.util.List;
 
+import com.bsl.pojo.*;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,11 +15,6 @@ import com.bsl.common.utils.StringUtil;
 import com.bsl.dao.JedisClient;
 import com.bsl.mapper.BslCodeTableMapper;
 import com.bsl.mapper.BslEnumInfoMapper;
-import com.bsl.pojo.BslCodeTableExample;
-import com.bsl.pojo.BslCodeTableKey;
-import com.bsl.pojo.BslEnumInfo;
-import com.bsl.pojo.BslEnumInfoExample;
-import com.bsl.pojo.BslEnumInfoKey;
 import com.bsl.pojo.BslEnumInfoExample.Criteria;
 import com.bsl.select.ErrorCodeInfo;
 import com.bsl.select.QueryCriteria;
@@ -26,6 +22,8 @@ import com.bsl.service.enums.EnumService;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.google.common.base.CaseFormat;
+
+import javax.servlet.http.HttpServletRequest;
 
 @Service
 public class EnumServiceImpl implements EnumService {
@@ -49,6 +47,17 @@ public class EnumServiceImpl implements EnumService {
 		criteria.andEnumEnglishNameEqualTo(enumEngName);
 		bslEnumInfoExample.setOrderByClause("`enum_order`");
 		return bslEnumInfoMapper.selectByExample(bslEnumInfoExample);
+	}
+
+	@Override
+	public BSLResult getBslEnumInfosByEngName(String enumEngName) {
+		BslEnumInfoExample bslEnumInfoExample = new BslEnumInfoExample();
+		Criteria criteria = bslEnumInfoExample.createCriteria();
+		criteria.andEnumEnglishNameEqualTo(enumEngName);
+		bslEnumInfoExample.setOrderByClause("`enum_order`");
+		List<BslEnumInfo> list = bslEnumInfoMapper.selectByExample(bslEnumInfoExample);
+		PageInfo<BslEnumInfo> pageInfo = new PageInfo<BslEnumInfo>(list);
+		return BSLResult.ok(list, "enumServiceImpl", "getBslEnumInfosByEngName",pageInfo.getTotal(),list);
 	}
 
 	/**
@@ -212,5 +221,13 @@ public class EnumServiceImpl implements EnumService {
 		}
 		return BSLResult.ok();
 	}
-	
+
+	@Override
+	public BSLResult getBslEnumInfos(HttpServletRequest request) {
+		List<BslEnumInfo> list = bslEnumInfoMapper.getEnumChiEngNames();
+		PageInfo<BslEnumInfo> pageInfo = new PageInfo<>(list);
+		request.setAttribute("enumSelectList", list);
+		return BSLResult.ok(list, "enumServiceImpl", "getBslEnumInfos",pageInfo.getTotal(),list);
+	}
+
 }

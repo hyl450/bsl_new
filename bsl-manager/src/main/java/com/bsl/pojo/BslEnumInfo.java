@@ -1,11 +1,22 @@
 package com.bsl.pojo;
 
 public class BslEnumInfo extends BslEnumInfoKey {
+    private String enumEnglishName;
     private String enumChineseName;
 
     private String enumValue;
 
     private Integer enumOrder;
+
+    @Override
+    public String getEnumEnglishName() {
+        return enumEnglishName;
+    }
+
+    @Override
+    public void setEnumEnglishName(String enumEnglishName) {
+        this.enumEnglishName = enumEnglishName;
+    }
 
     public String getEnumChineseName() {
         return enumChineseName;

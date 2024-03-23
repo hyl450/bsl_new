@@ -111,12 +111,29 @@
 				}else{
 					//子节点才可以打开tab页
 					if(node.type == "1"){
-						//添加新的选项卡
-						$('#tabs').tabs('add',{
-							title:node.id + "-" + node.text,
-							href:node.href,
-							closable:true
-						});
+						//限制重复打开相同tab页
+						var tabs = $('#tabs').tabs('tabs');
+						var isOpen = true;
+						if (tabs.length > 0) {
+							for (var i = tabs.length - 1; i >= 0; i--) {
+								var title = tabs[i].panel('options').title;
+								var openTitle = node.id + "-" + node.text;
+								if (title == openTitle) {
+									isOpen = false;
+									//切回选中的tab页
+									$('#tabs').tabs("select", openTitle);
+									break;
+								}
+							}
+						}
+						if (isOpen) {
+							//添加新的选项卡
+							$('#tabs').tabs('add', {
+								title: node.id + "-" + node.text,
+								href: node.href,
+								closable: true
+							});
+						}
 					}
 				}
 			}

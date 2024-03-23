@@ -35,6 +35,9 @@ public class AutoEnumUtil {
 				}
 			}
 			request.setAttribute("userTypeList", list);
+		} else if("LX001".equals(page)) {
+			List<BslEnumInfo> list = enumService.getEnumChiEngNames();
+			request.setAttribute("enumSelectList", list);
 		} else {
 			List<BslCodeTableKey> enumList = enumService.getPageEnumEngKeys(page);
 			for (BslCodeTableKey bslCodeTableKey : enumList) {

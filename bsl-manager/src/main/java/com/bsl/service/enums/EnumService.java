@@ -8,8 +8,11 @@ import com.bsl.pojo.BslCodeTableKey;
 import com.bsl.pojo.BslEnumInfo;
 import com.bsl.select.QueryCriteria;
 
+import javax.servlet.http.HttpServletRequest;
+
 public interface EnumService {
 	List<BslEnumInfo> getBslEnumInfoByEngName(String enumEngName);
+	BSLResult getBslEnumInfosByEngName(String enumEngName);
 	List<BslEnumInfo> getEnumChiEngNames();
 	List<BslCodeTableKey> getPageEnumEngKeys(String page);
 	//查询所有枚举信息
@@ -24,4 +27,5 @@ public interface EnumService {
 	BSLResult editEnum(BslEnumInfo bslEnumInfo);
 	//一键同步
 	BSLResult synchData();
+	BSLResult getBslEnumInfos(HttpServletRequest request);
 }

@@ -19,6 +19,8 @@ import com.bsl.select.QueryCriteria;
 import com.bsl.select.QueryExample;
 import com.bsl.service.enums.EnumService;
 
+import javax.servlet.http.HttpServletRequest;
+
 @Controller
 public class EnumController {
 	
@@ -37,6 +39,18 @@ public class EnumController {
 	@ResponseBody
 	public BSLResult getBslEnumInfoByEngName(@PathVariable String enumEngName){
 		return BSLResult.ok(enumService.getBslEnumInfoByEngName(enumEngName));
+	}
+
+	@RequestMapping("/enum/init")
+	@ResponseBody
+	public BSLResult getBslEnumInfos(HttpServletRequest request){
+		return enumService.getBslEnumInfos(request);
+	}
+
+	@RequestMapping("/enum/query/{enumEngName}")
+	@ResponseBody
+	public BSLResult getBslEnumInfosByEngName(@PathVariable String enumEngName){
+		return enumService.getBslEnumInfosByEngName(enumEngName);
 	}
 	
 	/**
